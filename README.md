@@ -65,13 +65,10 @@ On Monterey and newer you have to install 3 extensions:
 The Intel wifi card has similar performance to the Fenvi with Broadcom. As for the 2 ways to install it, they also have similar performance although `AirportItlwm.kext` gives a better score.
  
 <p align="left">
-<img width="512" src="Test itlwm.png">
+<img width="540" src="Test itlwm.png">
 </p>
 <p align="left">
-<img width="512" src="Test AirportItlwm.png">
-</p>
-<p align="left">
-<img width="512" src="Test Fenvi.png">
+<img width="540" src="Test AirportItlwm.png">
 </p>
 
 ### Summary
