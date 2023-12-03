@@ -18,9 +18,6 @@ The card can be purchased in 2 different ways:
   <p align="left">
   <img style="padding-left:120px;" width="320" src="AX210 card.jpg">
   </p>
-  <p align="left">
-  <img style="padding-left:120px;" width="480" src="Adapter without card.jpg">
-  </p>
 
 ### Revert OCLP patch and config.plist changes
  
