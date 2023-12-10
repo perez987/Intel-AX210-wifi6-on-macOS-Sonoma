@@ -8,7 +8,7 @@ Here I propose a model of Intel Wi-Fi card that by default lacks support but can
  
 The card can be purchased in 2 different ways:
 
-* fully assembled by _Ziyituod_: WiFi 6E Intel AX210S PCIe
+* fully assembled by _Ziyituod_ and others: WiFi 6E Intel AX210S PCIe
   <p align="left">
   <img style="padding-left:120px;" width="340" src="Card and adapter.png">
   </p>
