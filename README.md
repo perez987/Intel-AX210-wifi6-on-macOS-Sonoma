@@ -83,11 +83,11 @@ This is correct since the project is called `itlwm`. But I prefer Hackintool to 
 By default it is like this:
 
 <p align="left">
-<img width="540" src="itlwm name.png">
+<img width="660" src="itlwm name.png">
 </p>
 
 But, changing to `Name=AirportItlwm`, Hackintool displays the active kext in a way I like better.
 
 <p align="left">
-<img width="540" src="AirportItlwm name.png">
+<img width="660" src="AirportItlwm name.png">
 </p>
