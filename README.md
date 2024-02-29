@@ -86,7 +86,7 @@ By default it is like this:
 <img width="660" src="itlwm name.png">
 </p>
 <p align="left">
-<img width="540" src="Hackintool itlwm.png">
+<img width="440" src="Hackintool itlwm.png">
 </p>
 
 But, changing to `Name=AirportItlwm`, Hackintool displays the active kext in a way I like better.
@@ -95,5 +95,5 @@ But, changing to `Name=AirportItlwm`, Hackintool displays the active kext in a w
 <img width="660" src="AirportItlwm name.png">
 </p>
 <p align="left">
-<img width="540" src="Hackintool AirportItlwm.png">
+<img width="440" src="Hackintool AirportItlwm.png">
 </p>
