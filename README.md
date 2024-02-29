@@ -71,3 +71,23 @@ The Intel wifi card has performance not so different from the Fenvi with Broadco
 ### Summary
  
 This hardware is a valid option for those who do not have Wi-Fi in Sonoma or do not want to apply OCLP root patches. It is not expensive and is easy to install. As a main drawback, the features of the Apple ecosystem are lost (all with `itlwm.kext` and most with `AirportItlwm.kext`). Airdrop does not work in any way and this is the feature that I miss the most with respect to the Fenvi.
+
+### Note about Hackintool
+
+Very small issue.
+
+Hackintool by [headkaze](https://github.com/benbaker76/Hackintool) has an Extensions tab where it reports the installed kexts. In the list of kexts, `itlwm` is seen when we use `itlwm` and also when we use `AirportItlwm`. This is because, in the file `/Applications/Hackintool.app/Contents/Resources/Kexts/kexts.plist`, both kexts have `Name=itlwm`.
+
+This is correct since the project is called `itlwm`. But I prefer Hackintool to show `AirportItlwm` when this is the active kext. This can be solved by modifying the value of the Name property in the `AirportItlwm` key inside the file.
+ 
+By default it is like this:
+
+<p align="left">
+<img width="540" src="itlwm-name.png">
+</p>
+
+But, changing to Name=AirportItlwm, Hackintool displays the active kext in a way I like better.
+
+<p align="left">
+<img width="540" src="AirportItlwm name.png">
+</p>
