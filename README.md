@@ -35,9 +35,9 @@ From OpenCore-Patcher >> Post-Install Root Patch >> Revert Root Patches.
 The 2 kexts are available on the OpenIntelWireless site. There are 2 ways to install Wi-Fi:
 
 * `itlwm.kext`: uses `IOEthernetController` instead of `IO80211Family` so the connection spoofs as Ethernet even though it works as wifi. It does not use the macOS Wi-Fi menu, instead you have to use the HeliPort application.
-* `AirportItlwm.kext`: uses `IO80211Family` so it works like the rest of the system's Wi-Fi connections. It provides minimal Continuity features (Handoff and Universal Clipboard) but appears to have lower stability than `itlwm.kext` and cannot connect to hidden networks. No HeliPort needed.
+* `AirportItlwm.kext`: uses `IO80211Family` so it works like the rest of the system's Wi-Fi connections. It provides minimal Continuity features (Handoff and Universal Clipboard, not always available) but cannot connect to hidden networks. No HeliPort needed.
 
-Both kexts should not be used at the same time, only one of them. I have tried both and they seem to have worked well, in my opinion the stability is very similar although with `AirportItlwm.kext` Photos app sometimes displays the "poor network with synchronization paused" message. The card is well detected, as you can see in Hackintool.
+Both kexts should not be used at the same time, only one of them. I have tried both and they seem to have worked well. The card is well detected, as you can see in Hackintool.
 
 <p align="left">
 <img width="740" src="AX210 Hackintool.png">
