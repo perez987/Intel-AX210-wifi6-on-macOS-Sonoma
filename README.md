@@ -9,17 +9,18 @@ Here I propose a model of Intel Wi-Fi card that by default lacks support but can
 The card can be purchased in 2 different ways:
 
 * fully assembled by _Ziyituod_ and others: WiFi 6E Intel AX210S PCIe
-  
-  <p align="left">
-  <img style="padding-left:120px;" width="340" src="Card and adapter.png">
-  </p>
-  </p>
-
 * in 2 parts, card itself (WiFi 6E Intel AX210 NGW Bluetooth Card for Laptop with M.2/NGFF Connector) and adapter (PCIE X1 to M.2/NGFF A+E Key Adapter for WiFi Bluetooth Module).
-  
-  <p align="left">
-  <img style="padding-left:120px;" width="320" src="AX210 card.jpg">
-  </p>
+
+<table>
+<tr>
+<td>
+  <img src="Card and adapter.png">
+ </td>
+<td>
+  <img src="AX210 card.jpg">
+ </td>
+</tr>
+</table>
 
 ### Revert OCLP patch and config.plist changes
 
