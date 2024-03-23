@@ -49,11 +49,11 @@ Both kexts should not be used at the same time, only one of them. I have tried b
 
 I am using HeliPort from [diepeterpan](https://github.com/diepeterpan/HeliPort), it is a fork of the oficial but has performance and interface improvements. From the HeliPort icon in the menu bar you can connect and disconnect Wi-Fi networks as well as set it to be added to the startup items.
 
-**Note**: macOS 14.4 has changed parts of the Wi-Fi stack. If you update to this macOS version you must get AirportItlwm v2.3.0 for Sonoma 14.4. All kexts are avalilable in the [releases](https://github.com/OpenIntelWireless/itlwm/releases) page.
-
 <p align="left">
 <img width="400" src="HeliPort menu.png">
 </p>
+
+**Note**: macOS 14.4 has changed parts of the Wi-Fi stack. If you update to this macOS version you must get AirportItlwm v2.3.0 for Sonoma 14.4. All kexts are avalilable in the [releases](https://github.com/OpenIntelWireless/itlwm/releases) page.
 
 ### Installing Bluetooth module
 
