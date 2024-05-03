@@ -29,7 +29,7 @@ If you have been using Fenvi or Broadcom Wi-Fi, you must revert all the settings
 In config.plist:
 
 * disable kexts (`IOSkywalk.kext`, `IO80211FamilyLegacy.kext` and `AirPortBrcmNIC.kext`)
-* disable ``IOSkywalk.kext` blocking
+* disable `IOSkywalk.kext` blocking
 * change `csr-active-config` to 00000000
 * change `SecureBootModel` to a value other than Disabled.
 
