@@ -1,5 +1,9 @@
 # Wi-Fi 6 Intel AX210 on macOS Sonoma
 
+<p align="center">
+<img width="256" src="img/Wi-Fi.png">
+</p>
+
 macOS Sonoma removed drivers for Broadcom Wi-Fi cards found in Mac models prior to 2017. One of the affected cards is the Fenvi T-919, widely used in Hacks. OCLP developers published a fix that allows these Wi-Fi to work in Sonoma, adding this feature to the root patches that OCLP can apply. In order to apply root patches, OCLP requires macOS to run with some relaxed security features: SecureBootModel disabled and SIP partially disabled. This still represents a certain loss of security in macOS, as some users have noted.
 
 Here I propose a model of Intel Wi-Fi card that by default lacks support but can be used in Sonoma thanks to the work of the OpenIntelWireless site. This is the Intel AX210S PCIe WiFi 6E card. This card can work with regular macOS security conditions without needing to relax Apple Secure Boot or SIP. It may be interesting for those who lack Wi-Fi in macOS Sonoma or for those who want to keep the security of their system without resorting to OCLP patches.
@@ -14,10 +18,10 @@ The card can be purchased in 2 different ways:
 <table>
 <tr>
 <td>
-  <img src="Card and adapter.png">
+  <img src="img/Card and adapter.png">
  </td>
 <td>
-  <img src="AX210 card.jpg">
+  <img src="img/AX210 card.jpg">
  </td>
 </tr>
 </table>
@@ -45,7 +49,7 @@ The 2 kexts are available on the OpenIntelWireless site. There are 2 ways to ins
 Both kexts should not be used at the same time, only one of them. I have tried both and they seem to have worked well. The card is well detected, as you can see in Hackintool.
 
 <p align="left">
-<img width="740" src="AX210 Hackintool.png">
+<img width="740" src="img/AX210 Hackintool.png">
 </p>
 
 **Note**: macOS 14.4 has changed parts of the Wi-Fi stack. If you update to this macOS version you must get AirportItlwm v2.3.0 for Sonoma 14.4. All kexts are avalilable in the [releases](https://github.com/OpenIntelWireless/itlwm/releases) page.
@@ -53,7 +57,7 @@ Both kexts should not be used at the same time, only one of them. I have tried b
 I am using HeliPort from [diepeterpan](https://github.com/diepeterpan/HeliPort), it is a fork of the oficial but has performance and interface improvements. From the HeliPort icon in the menu bar you can connect and disconnect Wi-Fi networks as well as set it to be added to the startup items.
 
 <p align="left">
-<img width="400" src="HeliPort menu.png">
+<img width="400" src="img/HeliPort menu.png">
 </p>
 
 ### Installing Bluetooth module
@@ -71,10 +75,10 @@ On Monterey and newer you have to install 3 extensions:
 The Intel card has Wi-Fi performance slightly better than the Fenvi with Broadcom. As for the 2 ways to install it, `AirportItlwm.kext` gives better score.
 
 <p align="left">
-<img width="540" src="Test itlwm.png">
+<img width="540" src="img/Test itlwm.png">
 </p>
 <p align="left">
-<img width="540" src="Test AirportItlwm.png">
+<img width="540" src="img/Test AirportItlwm.png">
 </p>
 
 ### Summary
@@ -92,17 +96,17 @@ This is correct since the project is called `itlwm`. But I prefer Hackintool to 
 By default it is like this:
 
 <p align="left">
-<img width="660" src="itlwm name.png">
+<img width="660" src="img/itlwm name.png">
 </p>
 <p align="left">
-<img width="440" src="Hackintool itlwm.png">
+<img width="440" src="img/Hackintool itlwm.png">
 </p>
 
 But, changing to `Name=AirportItlwm`, Hackintool displays the active kext in a way I like better.
 
 <p align="left">
-<img width="660" src="AirportItlwm name.png">
+<img width="660" src="img/AirportItlwm name.png">
 </p>
 <p align="left">
-<img width="440" src="Hackintool AirportItlwm.png">
+<img width="440" src="img/Hackintool AirportItlwm.png">
 </p>
