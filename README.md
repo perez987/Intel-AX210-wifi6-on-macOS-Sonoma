@@ -1,7 +1,7 @@
 # Wi-Fi 6 Intel AX210 on macOS Sonoma
 
 <p align="center">
-<img width="256" src="img/Wi-Fi.png">
+<img src="img/Wi-Fi.png">
 </p>
 
 macOS Sonoma removed drivers for Broadcom Wi-Fi cards found in Mac models prior to 2017. One of the affected cards is the Fenvi T-919, widely used in Hacks. OCLP developers published a fix that allows these Wi-Fi to work in Sonoma, adding this feature to the root patches that OCLP can apply. In order to apply root patches, OCLP requires macOS to run with some relaxed security features: SecureBootModel disabled and SIP partially disabled. This still represents a certain loss of security in macOS, as some users have noted.
