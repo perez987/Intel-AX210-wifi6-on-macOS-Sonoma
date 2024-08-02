@@ -8,6 +8,8 @@ macOS Sonoma removed drivers for Broadcom Wi-Fi cards found in Mac models prior 
 
 Here I propose a model of Intel Wi-Fi card that by default lacks support but can be used in Sonoma thanks to the work of the OpenIntelWireless site. This is the Intel AX210S PCIe WiFi 6E card. This card can work with regular macOS security conditions without needing to relax Apple Secure Boot or SIP. It may be interesting for those who lack Wi-Fi in macOS Sonoma or for those who want to keep the security of their system without resorting to OCLP patches.
 
+---
+
 ### Hardware
 
 The card can be purchased in 2 different ways:
@@ -26,6 +28,8 @@ The card can be purchased in 2 different ways:
 </tr>
 </table>
 
+---
+
 ### Revert OCLP patch and config.plist changes
 
 If you have been using Fenvi or Broadcom Wi-Fi, you must revert all the settings related to config.plist and OCLP root patch.
@@ -38,6 +42,8 @@ In config.plist:
 * change `SecureBootModel` to a value other than Disabled.
 
 From OpenCore-Patcher (OCLP) >> Post-Install Root Patch >> Revert Root Patches.
+
+---
 
 ### Installing wifi module
 
@@ -52,13 +58,15 @@ Both kexts should not be used at the same time, only one of them. I have tried b
 <img width="740" src="img/AX210 Hackintool.png">
 </p>
 
-**Note**: macOS 14.4 has changed parts of the Wi-Fi stack. If you update to this macOS version you must get AirportItlwm v2.3.0 for Sonoma 14.4. All kexts are avalilable in the [releases](https://github.com/OpenIntelWireless/itlwm/releases) page.
+**Note about macOS 14.4**: Apple has changed parts of the Wi-Fi stack. For this macOS you must get AirportItlwm v2.3.0 for Sonoma 14.4.
 
-I am using HeliPort from [diepeterpan](https://github.com/diepeterpan/HeliPort), it is a fork of the oficial but has performance and interface improvements. From the HeliPort icon in the menu bar you can connect and disconnect Wi-Fi networks as well as set it to be added to the startup items.
+**Note about macOS 15 beta**: itlwm.kext 2.3.0 + Heliport work fine but AirportItlwm.kext 2.3.0 for 14.4 doesn't.
 
-<p align="left">
-<img width="400" src="img/HeliPort menu.png">
-</p>
+All kexts are avalilable in the [releases](https://github.com/OpenIntelWireless/itlwm/releases) page.
+
+Heliport app is part of the OpenIntelWireless project, you can get it in the [releases](https://github.com/OpenIntelWireless/HeliPort/releases) page.
+
+---
 
 ### Installing Bluetooth module
 
@@ -68,7 +76,9 @@ On Monterey and newer you have to install 3 extensions:
 * `IntelBluetoothFirmware.kext` >> load the firmware to the device and set the device name in USB Host Controller to Bluetooth USB Host Controller.
 * `BlueToolFixup.kext` (available in Acidanthera's [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM) package) >> on macOS Monterey `IntelBluetoothInjector.kext`stopped working due to changes made by Apple to the Bluetooth stack.
 
-`IntelBTPatcher.kext `and `IntelBluetoothFirmware.kext` are inside the `IntelBluetooth` package available in the [releases](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases) page. Latest version is 2.4.0.
+`IntelBTPatcher.kext `and `IntelBluetoothFirmware.kext` are inside the `IntelBluetooth` package available in the [releases](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases) page.
+
+---
 
 ### Performance
 
@@ -81,9 +91,13 @@ The Intel card has Wi-Fi performance slightly better than the Fenvi with Broadco
 <img width="540" src="img/Test AirportItlwm.png">
 </p>
 
+---
+
 ### Summary
 
 This hardware is a valid option for those who do not have Wi-Fi in Sonoma or do not want to apply OCLP root patches. It is not expensive and is easy to install. As a main drawback, the features of the Apple ecosystem are lost (all with `itlwm.kext` and most with `AirportItlwm.kext`). Airdrop does not work in any way and this is the feature that I miss the most with respect to the Fenvi.
+
+---
 
 ### Note about Hackintool
 
