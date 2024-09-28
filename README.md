@@ -58,11 +58,11 @@ Both kexts should not be used at the same time, only one of them. I have tried b
 <img width="740" src="img/AX210 Hackintool.png">
 </p>
 
-**Note about macOS 14.4**: Apple has changed parts of the Wi-Fi stack. For this macOS you must get AirportItlwm v2.3.0 for Sonoma 14.4.
+**Note about macOS 14.4**: Apple has changed parts of the Wi-Fi stack. For this macOS you must get AirportItlwm v2.3.0 for Sonoma 14.4. itlwm.kext 2.3.0 works fine.
 
-**Note about macOS 15 beta**: itlwm.kext 2.3.0 + Heliport work fine but AirportItlwm.kext 2.3.0 for 14.4 doesn't.
+**Note about macOS 15**: itlwm.kext 2.3.0 + Heliport work fine but AirportItlwm.kext 2.3.0 for 14.4 doesn't.
 
-All kexts are avalilable in the [releases](https://github.com/OpenIntelWireless/itlwm/releases) page.
+All kexts are available in the [releases](https://github.com/OpenIntelWireless/itlwm/releases) page.
 
 Heliport app is part of the OpenIntelWireless project, you can get it in the [releases](https://github.com/OpenIntelWireless/HeliPort/releases) page.
 
